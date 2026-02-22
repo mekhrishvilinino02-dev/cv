@@ -38,3 +38,140 @@ nav ul li a.active {
     border-bottom: 2px solid white;
     padding-bottom: 5px;
 }
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Nav */
+header {
+    padding: 25px 0;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+nav ul li a.active {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px; /* ზომა თქვენი დიზაინის მიხედვით */
+    border-radius: 20px; /* მომრგვალებული კუთხეები */
+    object-fit: cover;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 30px; /* მომრგვალებული კუთხეები დიზაინის მიხედვით */
+}
+.contact-details {
+    display: flex;            /* განალაგებს ელემენტებს ერთ ხაზზე */
+    gap: 30px;                /* დაშორება ტელეფონს, მეილსა და მისამართს შორის */
+    margin-top: 40px;         /* დაშორება ზედა ღილაკებიდან */
+    border-top: 1px solid #eee; /* სურვილისამებრ: თხელი ხაზი გამოსაყოფად */
+    padding-top: 20px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #444;              /* ტექსტის ფერი */
+}
+
+.icon {
+    margin-right: 8px;        /* დაშორება იკონასა და ტექსტს შორის */
+    font-size: 18px;
+}
+
+/* თუ გინდა რომ მეილი ლურჯი და ხაზგასმული არ იყოს */
+.detail span {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+h1 span {
+    color: var(--primary-color);
+}
+
+.sub-text {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid #ddd;
+    color: var(--text-dark);
+}
+
+
+
+/* Stats Section */
+.stats {
+    background-color: #FEC5CE;
+
+    padding: 60px 0;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
