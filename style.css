@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #FB3F5C; /* ფერი Figma-ს მონაცემებიდან */
+    --header-text: #FFFFFF;
+}
+
+/* განახლებული ჰედერის სტილი */
+.main-header {
+    background-color: var(--primary-color); /* ჰედერის ფერი */
+    padding: 20px 0;
+    width: 100%;
+    height: 100px; /* დიზაინის სიმაღლე */
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 24px;
+    color: #FFFFFF !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF !important; /* თეთრი ფერი კონტრასტისთვის */
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.8; /* გადატარებისას ეფექტი */
+}
+
+/* აქტიური ლინკის ხაზი, თუ დიზაინში გჭირდებათ */
+nav ul li a.active {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
